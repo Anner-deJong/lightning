@@ -74,7 +74,7 @@ class TrainerCallbackHookMixin(ABC):
         for callback in self.callbacks:
             callback.setup(self, self.lightning_module, stage=stage)
 
-    def teardown(self, stage: Optional[str] = None) -> None:
+    def teardown(self, stage: str) -> None:
         r"""
         .. deprecated:: v1.6
             `TrainerCallbackHookMixin.teardown` was deprecated in v1.6 and will be removed in v1.8.
