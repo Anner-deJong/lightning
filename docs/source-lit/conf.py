@@ -95,6 +95,8 @@ extensions = [
     "sphinx.ext.githubpages",
     "pt_lightning_sphinx_theme.extensions.lightning",
 ]
+# todo: remove this after finishing fusion
+suppress_warnings = ['autosectionlabel.*']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ["_templates"]
