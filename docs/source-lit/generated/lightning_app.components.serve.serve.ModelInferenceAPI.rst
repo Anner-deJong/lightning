@@ -1,0 +1,1 @@
+../../source-app/generated/lightning_app.components.serve.serve.ModelInferenceAPI.rst

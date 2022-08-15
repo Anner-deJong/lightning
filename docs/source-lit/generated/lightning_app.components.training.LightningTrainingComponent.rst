@@ -1,0 +1,1 @@
+../../source-app/generated/lightning_app.components.training.LightningTrainingComponent.rst

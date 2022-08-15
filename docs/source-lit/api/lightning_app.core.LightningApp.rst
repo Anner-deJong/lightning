@@ -1,0 +1,1 @@
+../../source-app/api/lightning_app.core.LightningApp.rst
