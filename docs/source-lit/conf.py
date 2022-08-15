@@ -137,44 +137,15 @@ language = None
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = [
-    "PULL_REQUEST_TEMPLATE.md",
+    "generated/PULL_REQUEST_TEMPLATE.md",
     "**/README.md/*",
     "code_samples/convert_pl_to_app/requirements.txt",
-    # TODO: unused pages from PL
-    "accelerators/*",
-    "advanced/finetuning.rst",
-    "advanced/model_parallel.rst",
-    "advanced/pretrained.rst",
-    "advanced/pruning_quantization.rst",
-    "advanced/training_tricks.rst",
-    "advanced/strategy_registry.rst",
-    "advanced/transfer_learning.rst",
-    "clouds/*",
-    "common/checkpointing.rst",
-    "common/checkpointing_advanced.rst",
-    "common/console_logs.rst",
-    "common/early_stopping.rst",
-    "common/evaluation.rst",
-    "common/hyperparameters.rst",
-    "common/lightning_module.rst",
-    "common/progress_bar.rst",
-    "common/remote_fs.rst",
-    "common/trainer.rst",
-    "common/child_modules.rst",
-    "debug/debugging.rst",
-    "deploy/*",
-    "extensions/*",
-    "governance.rst",
-    "levels/advanced.rst",
-    "levels/core_skills.rst",
-    "levels/expert.rst",
-    "levels/intermediate.rst",
-    "starter/*",
-    "strategies/*",
-    "tuning/*",
-    "visualize/*",
-    "links.rst",
 ]
+
+os.makedirs(os.path.join(_PATH_HERE, "generated"), exist_ok=True)
+# copy all documents from GH templates like contribution guide
+for md in glob.glob(os.path.join(_PATH_ROOT, ".github", "*.md")):
+    shutil.copy(md, os.path.join(_PATH_HERE, "generated", os.path.basename(md)))
 
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = None
