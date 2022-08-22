@@ -4,4 +4,4 @@ ipython[notebook]
 ipython_genutils
 
 sphinx-autobuild
-https://storage.googleapis.com/grid-packages/lightning-ai-sphinx-theme/build-31.3.zip
+https://github.com/PyTorchLightning/lightning_sphinx_theme/archive/master.zip#egg=pt-lightning-sphinx-theme
