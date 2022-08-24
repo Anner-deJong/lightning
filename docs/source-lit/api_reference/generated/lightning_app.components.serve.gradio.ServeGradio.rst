@@ -1,1 +1,0 @@
-../../../source-app/api_reference/generated/lightning_app.components.serve.gradio.ServeGradio.rst
