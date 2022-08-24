@@ -1,1 +1,0 @@
-../../source-app/generated/lightning_app.storage.drive.Drive.rst
